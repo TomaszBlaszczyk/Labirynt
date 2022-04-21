@@ -16,7 +16,7 @@ public class Wall : MonoBehaviour
     private float currentWallX;
     public bool isActive;
     float rVarDist;
-    private void Start()
+    private void Awake()
     {
         rBody = GetComponent<Rigidbody>();
         wallController = FindObjectOfType<WallController>();
